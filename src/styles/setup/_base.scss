@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    //border: 5px solid yellow;
+}
+
+
+.container {
+    max-width: 1188px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.2rem;
+}
+
