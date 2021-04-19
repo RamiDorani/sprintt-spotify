@@ -1,6 +1,6 @@
 .nav-bar-container {
     background-color: #fff;
-    max-width: rem(270px);
+    width: 20vw;
     height: 100vh;
     position: relative;
 }
@@ -16,7 +16,6 @@
 .nav-bar-list {
     position: absolute;
     top: rem(110px);
-    //left: rem(26px);
 }
 
 .nav-bar-list >* {
@@ -44,8 +43,6 @@
 
 
 .nav-bar-item img {
-    // position: absolute;
-    // right: rem(200px);
     max-width: rem(20.18px);
     max-height: rem(21.6px);
 }
@@ -55,5 +52,9 @@
     left: rem(70px);
     text-decoration: none;
     color: black;
-    // top: rem(17px);
+}
+
+.selected {
+    border-radius: rem(10px);
+    background-color: #DDF5E5;
 }
