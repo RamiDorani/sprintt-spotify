@@ -1,0 +1,59 @@
+.nav-bar-container {
+    background-color: #fff;
+    max-width: rem(270px);
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    max-width: rem(109px);
+    max-height: rem(60px);
+    position: absolute;
+    top: rem(49px);
+    left: rem(55px);
+}
+
+.nav-bar-list {
+    position: absolute;
+    top: rem(110px);
+    //left: rem(26px);
+}
+
+.nav-bar-list >* {
+    margin-top: rem(37px);
+    margin-left: rem(26px);
+}
+
+.nav-bar-item {
+    width: rem(210px);
+    height: rem(55px);
+    font-family: rubik;
+    font-size: rem(18px);
+    line-height: rem(21.33px);
+    padding-left: rem(30px);
+    padding-top: rem(16px);
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav-bar-item:hover {
+    border-radius: rem(10px);
+    background-color: #DDF5E5;
+}
+
+
+.nav-bar-item img {
+    // position: absolute;
+    // right: rem(200px);
+    max-width: rem(20.18px);
+    max-height: rem(21.6px);
+}
+
+.nav-bar-item span {
+    position: absolute;
+    left: rem(70px);
+    text-decoration: none;
+    color: black;
+    // top: rem(17px);
+}

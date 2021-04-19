@@ -4,11 +4,19 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 .app-wrapper {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
+    background-color: #F1F7F1;
     //border: 5px solid yellow;
 }
 
