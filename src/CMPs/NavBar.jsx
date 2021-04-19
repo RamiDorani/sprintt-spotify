@@ -21,7 +21,7 @@ export function NavBar() {
                     <NavLink exact to="/liked-songs" className="nav-bar-item flex" activeClassName="selected">
                 <li>
                         <img src={require('../assets/liked_songs_icon.png').default} alt="" />
-                        <span>Liked songs</span>
+                        <span className="liked-songs">Liked songs</span>
                 </li>
                     </NavLink>
             </ul>
