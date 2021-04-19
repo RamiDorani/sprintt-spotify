@@ -6,7 +6,7 @@ export function NavBar() {
         <div className="nav-bar-container flex-col">
             <img className="logo" src={require('../assets/logo.png').default} alt="" />
             <ul className="nav-bar-list">
-                <NavLink exact to="/"  className="nav-bar-item flex" activeClassName="selected"> 
+                <NavLink exact to="/"  className="flex nav-bar-item" activeClassName="selected"> 
                     <li>
                         <img src={require('../assets/home_icon.png').default} alt="" />
                         <span>Home</span>

@@ -1,6 +1,7 @@
 .nav-bar-container {
     background-color: #fff;
-    width: 20vw;
+    width: 100%;
+    max-width: 20vw;
     height: 100vh;
     position: relative;
 }
@@ -16,6 +17,7 @@
 .nav-bar-list {
     position: absolute;
     top: rem(110px);
+    width: 100%;
 }
 
 .nav-bar-list >* {
@@ -24,7 +26,8 @@
 }
 
 .nav-bar-item {
-    width: rem(210px);
+    width: 100%;
+    max-width: rem(180px);
     height: rem(55px);
     font-family: rubik;
     font-size: rem(18px);
@@ -57,4 +60,39 @@
 .selected {
     border-radius: rem(10px);
     background-color: #DDF5E5;
+}
+
+
+@include for-mobile-layout {
+    .nav-bar-container {
+        background-color: #fff;
+        width: 100%;
+        max-width: 40vw;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .nav-bar-item{
+        font-size: rem(14px);
+        right: rem(50px);
+        width: 100%;
+        max-width: rem(160px);
+        height: rem(55px);
+        left: -7px;
+    }
+
+    .nav-bar-item span {
+        position: relative;
+        left: 15px;
+    }
+    
+
+    .logo {
+        max-width: rem(109px);
+        max-height: rem(60px);
+        position: absolute;
+        top: rem(40px);
+        left: 20%;
+    }
+
 }
