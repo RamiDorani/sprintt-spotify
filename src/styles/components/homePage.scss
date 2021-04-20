@@ -1,4 +1,8 @@
 .main-container {
-    width: 80vw;
-    height: 100vh;
+    width: 74vw;
+    // min-height: 1500px;
+    position: relative;
+    top: rem(70px);
+    left: rem(300px);
 }
+

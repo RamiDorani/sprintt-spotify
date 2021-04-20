@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "@material-ui/core": "^4.11.3",
     "@material-ui/styles": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.10",
@@ -11,11 +12,13 @@
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-elastic-carousel": "^0.11.5",
+    "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "react-redux": "^7.2.1",
-    "react-scripts": "4.0.3",
+    "styled-components": "^5.2.3",
     "web-vitals": "^1.1.1"
   },
   "scripts": {

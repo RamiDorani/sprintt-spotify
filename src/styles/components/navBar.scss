@@ -3,7 +3,7 @@
     width: 100%;
     max-width: 20vw;
     height: 100vh;
-    position: relative;
+    position: fixed;
 }
 
 .logo {
@@ -58,6 +58,7 @@
 }
 
 .selected {
+    width: 200px;
     border-radius: rem(10px);
     background-color: #DDF5E5;
 }
