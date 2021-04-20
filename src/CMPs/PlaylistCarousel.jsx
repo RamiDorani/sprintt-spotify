@@ -38,7 +38,7 @@ export function PlaylistCarousel({ playlists }) {
 
     return (
 
-        <Carousel className="carousel container" itemsToShow={5} itemsToScroll={5} pagination={false}
+        <Carousel className="carousel " itemsToShow={5} itemsToScroll={5} pagination={false}
             renderArrow={({ type, onClick }) =>
                 <div className='arrows-container' onClick={onClick}>
                     {type === 'PREV' ? <i onClick={reduceShownItems} className={shownItems === 0 ? "fas fa-chevron-left prev-arrow disabled" : "fas fa-chevron-left prev-arrow"}></i> : <i onClick={increaseShownItems} className={shownItems === 5 ? "fas fa-chevron-right next-arrow disabled" : "fas fa-chevron-right next-arrow"}></i>}
