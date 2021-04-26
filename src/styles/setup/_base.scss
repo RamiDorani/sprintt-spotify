@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -18,6 +19,13 @@ ul {
     flex-direction: column;
     background-color: #F1F7F1;
     //border: 5px solid yellow;
+}
+
+.app-wrapper2 {
+    min-height: 5500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F7F1;
 }
 
 

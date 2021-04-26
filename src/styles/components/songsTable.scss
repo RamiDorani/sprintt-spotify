@@ -1,0 +1,84 @@
+.playlist-page-container {
+    height: rem(2550px);
+}
+
+
+.table-container {
+    color: #191414;
+    font-family: rubik-light;
+    position: absolute;
+    top: rem(300px);
+    left: rem(280px);
+    width: rem(1300px);
+    position: relative;
+    border-collapse: collapse;
+    text-align: justify;
+}
+
+
+// thead  { 
+//   border-bottom: 0.5px solid #646464;
+// }
+
+
+
+tbody tr { 
+ padding-left: 400px;
+  border-bottom: 0.5px solid #646464;
+  height: rem(80px);
+  position: relative;
+  //border: 1px solid red;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+// .song-row {
+//       position: relative;
+//       border: 1px solid red;
+//       cursor: pointer;
+//       transition: 0.5s;
+//   }
+  
+
+.title-tr {
+  position: relative;
+  left: rem(100px);
+}
+
+.tr-name {
+ padding-left: rem(40px);
+}
+
+tbody tr:hover {
+    background: rgba(29, 185, 84, 0.2);
+    border-radius: 10px;
+}
+
+
+  .play-line-icon {
+    max-width: 28px;
+    max-height: 28px;
+    position: relative;
+    left: rem(5px);
+  }
+
+  .disabled-icon {
+    max-width: 28px;
+    max-height: 28px;
+    position: relative;
+    left: rem(5px);
+    visibility: hidden;
+  }
+
+
+  .like-icon {
+    width: 19.98px;
+    height: 20px;
+    position: relative;
+    left: rem(25px);
+  }
+
+
+  .filled-icon {
+    background-color: #fff;
+  }
