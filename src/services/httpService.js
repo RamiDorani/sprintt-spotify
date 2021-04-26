@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const BASE_URL = 'http://api.sprintt.co/spotify/';
+const BASE_URL = 'https://api.sprintt.co/spotify/';
 
 const options = {
     headers: {
