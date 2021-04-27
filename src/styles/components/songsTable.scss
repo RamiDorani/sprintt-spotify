@@ -7,18 +7,13 @@
     color: #191414;
     font-family: rubik-light;
     position: absolute;
-    top: rem(300px);
+    top: rem(350px);
     left: rem(280px);
     width: rem(1300px);
     position: relative;
     border-collapse: collapse;
     text-align: justify;
 }
-
-
-// thead  { 
-//   border-bottom: 0.5px solid #646464;
-// }
 
 
 
@@ -32,13 +27,6 @@ tbody tr {
   transition: 0.5s;
 }
 
-// .song-row {
-//       position: relative;
-//       border: 1px solid red;
-//       cursor: pointer;
-//       transition: 0.5s;
-//   }
-  
 
 .title-tr {
   position: relative;
@@ -81,4 +69,22 @@ tbody tr:hover {
 
   .filled-icon {
     background-color: #fff;
+  }
+
+
+  .filter-label {
+    position: absolute;
+    left: rem(370px);
+    top: rem(290px);
+    cursor: pointer;
+  }
+
+
+
+  .filter {
+    position: absolute;
+    left: rem(405px);
+    top: rem(295px);
+    border: none;
+    background-color: #F1F7F1;
   }

@@ -2,3 +2,10 @@
 $mobile-breakpoint: 460px;
 $narrow-breakpoint: 720px;
 $normal-breakpoint: 1350px;
+
+
+//audio player colors
+$rhap_theme-color: #191414;   // Color of all buttons and volume/progress indicators
+$rhap_bar-color: #191414;     // Color of volume and progress bar
+$rhap_time-color:#191414;       // Font color of current time and duration
+$rhap_font-family: rubik-light;   // Font family of current time and duration
