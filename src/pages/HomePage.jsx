@@ -15,7 +15,7 @@ export function HomePage() {
         dispatch(loadRecentlyPlayed());
         dispatch(loadFeaturedPlylists());
         dispatch(loadMoodPlylists());
-        console.log(featuredPlaylists);
+        //console.log(recentlyPlayedPlaylists);
         
     }, []);
 

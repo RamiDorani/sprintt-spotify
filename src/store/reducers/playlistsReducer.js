@@ -2,7 +2,8 @@ const initialState = {
     recentlyPlayedPlaylist: [],
     featuredPlaylists: [],
     moodPlaylists: [],
-    singlePlaylist:{}
+    singlePlaylist:{},
+    quickSingleTrack:{}
   }
 
 
@@ -32,6 +33,12 @@ const initialState = {
           return {
             ...state,
             singlePlaylist: action.playlist
+          }
+
+          case 'SET_quick_track':
+          return {
+            ...state,
+            quickSingleTrack: action.track
           }
 
         default:

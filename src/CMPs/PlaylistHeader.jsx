@@ -26,7 +26,7 @@ function _PlaylistHeader(props) {
             getSinglePlaylist(id);
         }
         
-    }, [])
+    }, [featuredPlaylists])
     
     const loadPlaylists = () => {
         dispatch(loadRecentlyPlayed());
@@ -36,7 +36,7 @@ function _PlaylistHeader(props) {
 
 
     const getSinglePlaylist = (id) => {
-        const matchPlaylist = [];
+        let matchPlaylist = [];
         
         if (recentlyPlayedPlaylists.playlists && recentlyPlayedPlaylists.playlists.length > 0) {
             matchPlaylist = recentlyPlayedPlaylists.playlists.filter(playlist => playlist.playlist_id == id);

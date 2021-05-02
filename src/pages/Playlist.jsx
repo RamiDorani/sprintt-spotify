@@ -44,7 +44,7 @@ export function Playlist(props) {
             <PlaylistHeader tracksAmount={songs.playlist_tracks} duration={songs.playlist_duration} />
             <label className="filter-label" htmlFor="filter"><img src={require('../assets/search.png').default} alt="" /></label>
             <input className="filter" id="filter" name="filter" value={filter} onChange={onHandleINputChange} type="text" placeholder="Filter" />
-            <SongsTable songs={filteredTracks} onLiked={onLiked} />
+            <SongsTable songs={filteredTracks} playlistId={props.match.params.id} onLiked={onLiked} />
         </div>
     )
 }

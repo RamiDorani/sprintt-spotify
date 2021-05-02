@@ -32,12 +32,16 @@ export function loadMoodPlylists() {
 
 
 export function savePlaylist(playlist) {
-    console.log(playlist);
     return dispatch => {
         dispatch({type: 'SET_1_PLAYLIST' ,playlist})
     }
 }
 
+export function saveSingleQuickTrack(track) {
+    return dispatch => {
+        dispatch({type: 'SET_quick_track',track})
+    }
+}
 
 
 

@@ -1,0 +1,45 @@
+.liked-header-container {
+    background-image: url('../../assets/liked_songs.jpg');
+    width:83.9vw;
+    height: rem(250px);
+    position: fixed;
+    left: rem(256.5px);
+    top: 0px;
+    color: beige;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    image-rendering: -webkit-optimize-contrast;
+    color: #F1F1F1;
+    z-index: 0;
+}
+
+.liked-songs-header-info {
+    position: relative;
+    top: rem(88px);
+}
+
+.liked-songs-header-info h3 {
+    font-size: rem(38px);
+    font-family: rubik-light;
+    font-weight: lighter;
+    line-height: rem(42.66px);
+    position: relative;
+    left: rem(109px);
+}
+
+.liked-songs-header-info h4 {
+    font-family: rubik-light;
+    font-size: rem(28px);
+    font-weight: lighter;
+    line-height: rem(42.66px);
+    position: relative;
+    right: rem(254px);
+}
+.liked-songs-header-info h4 span {
+    font-size: rem(36px);
+}
+
+ 
