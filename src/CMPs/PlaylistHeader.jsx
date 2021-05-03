@@ -16,18 +16,22 @@ function _PlaylistHeader(props) {
 
 
     useEffect(() => {
-        const { id } = props.match.params;
-        const localData = localStorageService.loadFromStorage('current-playlist');
-        if(localData&&localData[0].playlist_id==id) {
-            setSinglePlaylist(localData)
+        let mounted = true;
+        if (mounted) {
+            const { id } = props.match.params;
+            const localData = localStorageService.loadFromStorage('current-playlist');
+            if (localData && localData[0].playlist_id == id) {
+                setSinglePlaylist(localData)
+            }
+            else {
+                loadPlaylists();
+                getSinglePlaylist(id);
+            }
         }
-        else {
-            loadPlaylists();
-            getSinglePlaylist(id);
-        }
-        
+
+        return () => mounted = false;
     }, [featuredPlaylists])
-    
+
     const loadPlaylists = () => {
         dispatch(loadRecentlyPlayed());
         dispatch(loadFeaturedPlylists());
@@ -37,28 +41,28 @@ function _PlaylistHeader(props) {
 
     const getSinglePlaylist = (id) => {
         let matchPlaylist = [];
-        
+
         if (recentlyPlayedPlaylists.playlists && recentlyPlayedPlaylists.playlists.length > 0) {
             matchPlaylist = recentlyPlayedPlaylists.playlists.filter(playlist => playlist.playlist_id == id);
-            if(matchPlaylist.length > 0) {
+            if (matchPlaylist.length > 0) {
                 setSinglePlaylist(matchPlaylist);
-                localStorageService.saveToStorage('current-playlist',matchPlaylist)
+                localStorageService.saveToStorage('current-playlist', matchPlaylist)
             }
         }
 
         if (featuredPlaylists.playlists && featuredPlaylists.playlists.length > 0) {
             const matchPlaylist = featuredPlaylists.playlists.filter(playlist => playlist.playlist_id == id)
-            if(matchPlaylist.length > 0) {
+            if (matchPlaylist.length > 0) {
                 setSinglePlaylist(matchPlaylist);
-                localStorageService.saveToStorage('current-playlist',matchPlaylist)
+                localStorageService.saveToStorage('current-playlist', matchPlaylist)
             }
         }
 
         if (moodPlayedPlaylists.playlists && moodPlayedPlaylists.playlists.length > 0) {
             const matchPlaylist = moodPlayedPlaylists.playlists.filter(playlist => playlist.playlist_id == id)
-            if(matchPlaylist.length > 0) {
+            if (matchPlaylist.length > 0) {
                 setSinglePlaylist(matchPlaylist);
-                localStorageService.saveToStorage('current-playlist',matchPlaylist)
+                localStorageService.saveToStorage('current-playlist', matchPlaylist)
             }
         }
     }
@@ -74,14 +78,14 @@ function _PlaylistHeader(props) {
     return (
         <div style={playlisyStyle} className="playlist-header-container flex">
             <div className="black-layer">
-            <div className="playlist-box1 flex-col">
-                <h2>{singlePlaylist[0].name}</h2>
-                <p>{singlePlaylist[0].description}</p>
-            </div>
-            <div className="playlist-box2 flex-col">
-                <h3>{props.tracksAmount}</h3>
-                <p>{props.duration}</p>
-            </div>
+                <div className="playlist-box1 flex-col">
+                    <h2>{singlePlaylist[0].name}</h2>
+                    <p>{singlePlaylist[0].description}</p>
+                </div>
+                <div className="playlist-box2 flex-col">
+                    <h3>{props.tracksAmount}</h3>
+                    <p>{props.duration}</p>
+                </div>
             </div>
         </div>
     )

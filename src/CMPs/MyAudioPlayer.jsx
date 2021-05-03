@@ -10,8 +10,6 @@ export function MyAudioPlayer(props) {
     useEffect(() => {
         const tokenData = getEncryptedToken('32e4f4a3-666b-4419-8945-5a060bb777fb');
         setToken(tokenData);
-        // console.log(props);
-        // console.log(audioPlayer.current);
     }, []);
     
     const getEncryptedToken = (token) => {

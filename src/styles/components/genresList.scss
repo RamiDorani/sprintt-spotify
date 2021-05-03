@@ -1,0 +1,8 @@
+.genres-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(rem(310px), 2fr));
+    grid-auto-rows: rem(320px);
+    position: relative;
+    top: rem(50px);
+    left: rem(110px);
+}

@@ -11,7 +11,9 @@ export function LikedSongs() {
 
 
     useEffect(() => {
-        getLikedTracks();
+        let mounted = true;
+        if(mounted) getLikedTracks();
+        return () => mounted=false;
     }, [flag])
 
     const getLikedTracks = async () => {

@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { PlaylistCarousel } from '../CMPs/PlaylistCarousel';
 import { loadRecentlyPlayed, loadFeaturedPlylists, loadMoodPlylists } from '../store/actions/playlistsAction';
@@ -9,14 +9,17 @@ export function HomePage() {
     const recentlyPlayedPlaylists = useSelector(state => state.playlistsReducer.recentlyPlayedPlaylist);
     const featuredPlaylists = useSelector(state => state.playlistsReducer.featuredPlaylists);
     const moodPlayedPlaylists = useSelector(state => state.playlistsReducer.moodPlaylists);
-    
+
 
     useEffect(() => {
-        dispatch(loadRecentlyPlayed());
-        dispatch(loadFeaturedPlylists());
-        dispatch(loadMoodPlylists());
-        //console.log(recentlyPlayedPlaylists);
-        
+        let mounted = true;
+        if (mounted) {
+            dispatch(loadRecentlyPlayed());
+            dispatch(loadFeaturedPlylists());
+            dispatch(loadMoodPlylists());
+        }
+        return () => mounted = false;
+
     }, []);
 
 

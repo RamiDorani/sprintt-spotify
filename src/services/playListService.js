@@ -6,7 +6,9 @@ export const playListService = {
     getSongs,
     changeLikedStatus,
     postRecentlyPlayed,
-    getLikedSongs
+    getLikedSongs,
+    getcatagories,
+    getAllGenrePlaylists
 }
 
 
@@ -28,7 +30,6 @@ async function changeLikedStatus(trackObj) {
 }
 
 async function postRecentlyPlayed(playlistId,songId) {
-    //console.log(playlistId,songId);
     const endpoint = `notify_played/${playlistId}/${songId}`;
     await httpService.post(endpoint);
 }
@@ -37,5 +38,18 @@ async function getLikedSongs() {
     const endpoint = `liked_tracks`;
     const data = await httpService.get(endpoint);
     return data;
+}
+
+async function getcatagories() {
+    const endpoint = `categories`;
+    const data = await httpService.get(endpoint);
+    return data
+}
+
+
+async function getAllGenrePlaylists (id) {
+    const endpoint = `category_playlists/${id}`
+    const data = await httpService.get(endpoint)
+    return data.playlists;
 }
 
