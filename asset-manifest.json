@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sprintt-spotify/static/css/main.1102400e.chunk.css",
+    "main.css": "/sprintt-spotify/static/css/main.e47742db.chunk.css",
     "main.js": "/sprintt-spotify/static/js/main.e0c4a0fc.chunk.js",
     "main.js.map": "/sprintt-spotify/static/js/main.e0c4a0fc.chunk.js.map",
     "runtime-main.js": "/sprintt-spotify/static/js/runtime-main.b4adbd4e.js",
@@ -10,7 +10,7 @@
     "static/js/3.316e9a3b.chunk.js": "/sprintt-spotify/static/js/3.316e9a3b.chunk.js",
     "static/js/3.316e9a3b.chunk.js.map": "/sprintt-spotify/static/js/3.316e9a3b.chunk.js.map",
     "index.html": "/sprintt-spotify/index.html",
-    "static/css/main.1102400e.chunk.css.map": "/sprintt-spotify/static/css/main.1102400e.chunk.css.map",
+    "static/css/main.e47742db.chunk.css.map": "/sprintt-spotify/static/css/main.e47742db.chunk.css.map",
     "static/js/2.98432eae.chunk.js.LICENSE.txt": "/sprintt-spotify/static/js/2.98432eae.chunk.js.LICENSE.txt",
     "static/media/Play.svg": "/sprintt-spotify/static/media/Play.586d5fd7.svg",
     "static/media/global.scss": "/sprintt-spotify/static/media/liked_songs.bef91fa0.jpg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.b4adbd4e.js",
     "static/js/2.98432eae.chunk.js",
-    "static/css/main.1102400e.chunk.css",
+    "static/css/main.e47742db.chunk.css",
     "static/js/main.e0c4a0fc.chunk.js"
   ]
 }
